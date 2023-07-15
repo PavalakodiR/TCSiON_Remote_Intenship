@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <style>
+        body {
+         background-image: url('https://media.licdn.com/dms/image/D4E12AQFe0zi6vH-7xw/article-cover_image-shrink_600_2000/0/1683188552293?e=2147483647&v=beta&t=VG7RuUAk_hgbY3gDizdsq433kKG5tSvO-LzHduFwg6Q');
+         background-repeat: no-repeat;
+         background-attachment: fixed;  
+         background-size: 100% 100%;
+       }
+	<title>HR Salary Prediction</title>
+
+			body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		label {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+    input[type="str"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="float"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"></a>
+        <img src="https://blog.lucywalkerrecruitment.com/hubfs/shutterstock_1185993259.jpg" width="30" height="30" alt="">
+      </a>
+      <a class="navbar-brand" href="#">HR SALARY ANALYSIS[TCSion Remote Intership]</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index">HR Analysis</a>
+          
+          </li>
+        
+        
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Intenship:RIO Intenship</a>
+              <a class="dropdown-item" href="#">Email:27pavalakodi@gmail.com@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+  </nav>
+  
+	<form action="/getdata" method="post">
+    <p> Enter only this role 'HR Assistant' 'HR Manager' 'HR Specialist' <p>
+    <label for="Role">Role:</label>
+    <input type="text" id="Role" name="Role" required><br><br>
+  
+    <label for="Years of Experience">Experience:</label>
+    <input type="text" id="Years of Experience" name="Years of Experience" required><br><br>
+    
+    <button type="submit">SUBMIT</button>
+  </form>
+  
+	</form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="column">
+      <div class="col-sm">
+        <div class="card" style="width: 50rem;">
+          <img src="https://hr.university/wp-content/uploads/2022/04/05-HR-Assistant-Job-Description.jpg" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HR Assistant</h5>
+            <p class="card-text"> As an HR assistant, you can perform various tasks related to human resources management. Here are some common responsibilities of an HR assistant:
+
+<p>1. Recruitment and Hiring:
+ - Assist in job postings and advertisement.
+ - Screen resumes and applications.
+ - Schedule interviews and coordinate with candidates.
+ - Conduct background checks and verify employment eligibility.
+ - Prepare offer letters and employment contracts.
+
+<p>2. Onboarding and Orientation:
+ <p>- Help new employees with paperwork and documentation.
+<p> - Coordinate orientation sessions and employee training.
+ <p>- Provide information on company policies, benefits, and procedures.
+ <p>- Ensure a smooth onboarding process for new hires.
+
+<p>3. Employee Records and Documentation:
+<p> - Maintain and update employee records in the HR database.
+ <p>- Handle confidential employee information with discretion.
+ <p>- Manage personnel files and documentation (contracts, performance reviews, etc.).
+ <p>- Assist in generating HR reports and analytics as required.
+
+<p>4. Benefits Administration:
+<p>  - Support employees with benefits enrollment and changes.
+<p>  - Communicate and explain benefit programs to employees.
+<p> - Collaborate with benefit providers and vendors.
+<p> - Assist in resolving benefit-related inquiries or issues.
+
+<p>5. Payroll and Compensation:
+<p> - Help with payroll processing, such as gathering timesheets or attendance records.
+<p> - Collaborate with the finance department for accurate salary calculations.
+<p> - Assist employees with payroll-related questions.
+<p> - Maintain records of salary adjustments, bonuses, and deductions.
+
+<p>6. Employee Relations:
+<p> - Handle general employee inquiries and provide support.
+<p> - Assist in employee performance evaluations and feedback processes.
+<p> - Collaborate with managers to address employee concerns or conflicts.
+<p> - Contribute to employee engagement initiatives and activities.
+
+<p>7. HR Policies and Compliance:
+ <p>- Assist in implementing HR policies and procedures.
+ <p>- Ensure compliance with labor laws and regulations.
+<p> - Stay updated on changes in employment laws and HR best practices.
+ <p>- Help maintain a positive work environment and foster a culture of diversity and inclusion.
+<p>
+These are some of the key responsibilities of an HR assistant. The specific tasks may vary depending on the organization and its requirements. It's essential to maintain confidentiality, have excellent communication skills, and be well-organized to succeed in this role.
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="col-sm">
+        <div class="card" style="width: 50rem;">
+     <img src="https://previews.123rf.com/images/artinspiring/artinspiring2005/artinspiring200501924/147809785-hr-specialist-typographic-header-concept-idea-of-recruitment-and-job.jpg" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HR Specialistl</h5>
+            <p class="card-text">As an HR specialist, you are responsible for focusing on specific areas within the human resources field and providing expertise and support in those areas. Your role may vary depending on the organization and its specific needs. Here are some common HR specialist roles:
+
+<p>1. Recruitment Specialist:
+<p> - Develop and implement recruitment strategies to attract qualified candidates.
+<p> - Source and screen resumes, conduct interviews, and coordinate the hiring process.
+<p> - Collaborate with hiring managers to understand their staffing needs and provide guidance.
+<p> - Stay updated on recruitment trends and best practices.
+
+<p>2. Compensation and Benefits Specialist:
+<p>  - Design and administer compensation and benefits programs.
+<p> - Conduct salary surveys and benchmarking to ensure competitive pay structures.
+<p> - Manage employee benefits, including insurance plans, retirement programs, and wellness initiatives.
+<p> - Analyze and interpret data to evaluate the effectiveness of compensation and benefits programs.
+
+<p>3. Training and Development Specialist:
+<p>   - Identify training needs and develop training programs to enhance employee skills.
+<p>   - Deliver training sessions and workshops on various topics.
+<p>   - Coordinate and track employee participation in training programs.
+<p>  - Evaluate training effectiveness and make recommendations for improvement.
+
+<p>4. Employee Relations Specialist:
+<p>   - Handle employee inquiries, concerns, and grievances.
+<p>   - Conduct investigations into employee complaints and provide resolution.
+<p>   - Advise managers on employee relations issues, disciplinary actions, and terminations.
+<p>   - Develop and implement employee engagement initiatives.
+
+<p>5. HR Information Systems (HRIS) Specialist:
+<p>   - Oversee the HRIS system and ensure data accuracy and integrity.
+<p>   - Develop and maintain HR reports and analytics.
+<p>   - Train employees on HRIS usage and provide technical support.
+<p>   - Collaborate with IT to implement system upgrades and enhancements.
+
+<p>6. Compliance Specialist:
+<p>   - Ensure compliance with labor laws, regulations, and company policies.
+<p>   - Conduct audits to identify compliance gaps and recommend corrective actions.
+<p>   - Keep abreast of legal changes and update policies and practices accordingly.
+<p>   - Assist in responding to government audits and inquiries.
+
+<p>7. Performance Management Specialist:
+<p>   - Design and implement performance management processes and tools.
+<p>   - Train managers on conducting performance evaluations and providing feedback.
+<p>   - Monitor and evaluate performance appraisal data for consistency and effectiveness.
+<p>   - Provide guidance on performance improvement plans and employee development.
+
+<p>8. HR Analytics Specialist:
+<p>   - Analyze HR data to identify trends, patterns, and insights.
+<p>   - Develop and present reports and visualizations to inform HR decision-making.
+<p>   - Conduct predictive analytics to support workforce planning and talent management.
+<p>   - Collaborate with stakeholders to develop data-driven HR strategies.
+
+<p>These are examples of HR specialist roles, and the specific responsibilities may vary depending on the organization's needs and the specialization area. As an HR specialist, you bring expertise and focused support to the HR function, contributing to the overall success of the organization.
+          </div>
+        </div>
+      </div>
+<br>
+<div class="container">
+    <div class="column">
+      <div class="col-sm">
+        <div class="card" style="width: 50rem;">
+          <img src="https://labourlawgyan.com/wp-content/uploads/2021/11/Duties-and-responsibilities-of-HR-Manager-e1642054042865-1280x720.jpg" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HR Manager</h5>
+            <p class="card-text"><p>As an HR Manager, you play a crucial role in overseeing and managing the human resources function within an organization. Your responsibilities are broader and more strategic compared to an HR assistant. Here are some key responsibilities of an HR manager:
+
+<p>1. Strategic HR Planning:
+<p>   - Develop and implement HR strategies aligned with the organization's goals and objectives.
+<p>   - Collaborate with senior management to understand the business needs and provide HR insights and recommendations.
+<p>   - Conduct workforce planning to ensure the organization has the right talent and skills to meet future needs.
+<p>   - Develop succession plans to identify and develop future leaders within the organization.
+
+<p>2. Recruitment and Talent Acquisition:
+<p>   - Design and implement effective recruitment strategies and processes to attract top talent.
+<p>   - Oversee the selection and hiring process, including job analysis, job descriptions, and candidate assessment.
+<p>   - Build relationships with external recruitment agencies, universities, and other talent sources.
+<p>   - Develop employer branding initiatives to enhance the organization's reputation as an employer of choice.
+
+<p>3. Performance Management:
+<p>   - Develop and implement performance management systems and processes.
+<p>   - Provide guidance and training to managers on conducting performance evaluations and setting goals.
+<p>   - Monitor and evaluate employee performance, provide feedback, and identify areas for improvement.
+<p>   - Develop and implement performance improvement plans when necessary.
+
+<p>4. Employee Development and Training:
+<p>   - Identify training and development needs within the organization.
+<p>   - Design and deliver training programs to enhance employee skills and knowledge.
+<p>   - Support career development initiatives, including mentoring programs and individual development plans.
+<p>   - Monitor and evaluate the effectiveness of training and development programs.
+
+<p>5. Employee Relations:
+<p>   - Foster positive employee relations and maintain a healthy work environment.
+<p>   - Address employee concerns, grievances, and conflicts in a fair and timely manner.
+<p>   - Ensure compliance with labor laws and regulations.
+<p>   - Develop and implement employee engagement initiatives to enhance employee satisfaction and retention.
+
+<p>6. Compensation and Benefits:
+<p>   - Oversee the design and administration of compensation and benefits programs.
+<p>   - Conduct salary benchmarking and analysis to ensure competitive and fair compensation.
+<p>   - Develop and implement performance-based reward and recognition programs.
+<p>   - Stay updated on industry trends and best practices related to compensation and benefits.
+
+<p>7. HR Policies and Compliance:
+<p>   - Develop and update HR policies, procedures, and employee handbooks.
+<p>   - Ensure compliance with labor laws, regulations, and internal policies.
+<p>   - Provide guidance and support on disciplinary actions and terminations.
+<p>   - Conduct HR audits to assess compliance and identify areas for improvement.
+
+<p>8. HR Analytics and Reporting:
+<p>  - Utilize HR data and analytics to provide insights and support decision-making.
+<p> - Generate HR reports and metrics to track key HR indicators and trends.
+<p>   - Use data to identify opportunities for improving HR processes and strategies.
+
+<p>These are some of the primary responsibilities of an HR manager. The role requires strong leadership, strategic thinking, and the ability to effectively manage and develop the organization's human resources. It is essential to stay updated on HR trends, employment laws, and best practices to ensure the HR function adds value to the organization.
+          </div>
+        </div>
+      </div>
+<br>
+      
+<br>
+<br>
+  <footer class=" page-footer bg-dark font-small blue">
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      
+    </div>
+  </footer>
+
+
+</html>
+</body>
+</html>
+</body>
+</html>
